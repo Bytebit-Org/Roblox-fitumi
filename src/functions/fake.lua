@@ -66,7 +66,9 @@ end
 
 local function fakedTableIndex(tbl, key)
 	if tbl[internalsSymbol].setValues[key] == nil then
-		tbl[internalsSymbol].setValues[key] = createFake()
+		newFake = createFake()
+		newFake[internalsSymbol].parent = tbl
+		tbl[internalsSymbol].setValues[key] = newFake
 	end
 
 	if tbl[internalsSymbol].setValues[key] == nilSymbol then

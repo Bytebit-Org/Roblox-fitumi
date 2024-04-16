@@ -25,13 +25,13 @@
     "access": "public"
   },
   "files": [
-	"out/**/*.d.ts",
-	"out/**/*.lua"
+    "out/**/*.d.ts",
+    "out/**/*.lua"
   ],
   "types": "out/index.d.ts",
   "devDependencies": {
-    "@rbxts/compiler-types": "^2.0.4-types.1",
-    "@rbxts/types": "^1.0.656",
+    "@rbxts/compiler-types": "^2.3.0-types.1",
+    "@rbxts/types": "^1.0.768",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
